@@ -1,19 +1,13 @@
 const icon = document.querySelector("#menu-bar");
 const menu = document.querySelector("#menu");
-const closeMenu = document.querySelector("#close-icon");
 const value = document.querySelector("#value");
 const input = document.querySelector("#input");
 const chat = document.querySelector("#chat");
 const whatsapp = document.querySelector("#whatsapp");
 
 icon.addEventListener("click", () => {
-  menu.classList.remove("hidden");
-  menu.classList.add("flex");
-});
-
-closeMenu.addEventListener("click", () => {
-  menu.classList.remove("flex");
-  menu.classList.add("hidden");
+  menu.classList.toggle("hidden");
+//   menu.classList.add("flex");
 });
 
 input.addEventListener("input", (event) => {
