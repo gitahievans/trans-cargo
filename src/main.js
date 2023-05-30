@@ -76,12 +76,12 @@ const elements = [
   },
   {
     selector: ".value2",
-    options: { duration: 2, y: 300, delay: 0.5, opacity: 0 },
+    options: { duration: 2, y: 300, delay: 0.25, opacity: 0 },
     trigger: ".value2",
   },
   {
     selector: ".value3",
-    options: { duration: 2, y: 300, delay: 0.75, opacity: 0 },
+    options: { duration: 2, y: 300, delay: 0.5, opacity: 0 },
     trigger: ".value3",
   },
   {
