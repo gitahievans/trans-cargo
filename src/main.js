@@ -218,6 +218,18 @@ const elements = [
     trigger: ".service3-img",
     toggleActions: "restart none restart none ",
   },
+
+  {
+    selector: ".nav-item",
+    options: {
+      duration: 1,
+      opacity: 0,
+      scale: -2,
+      delay: .5,
+      stagger: true,
+    },
+    trigger: ".nav-item",
+  },
 ];
 animateElements(elements);
 
