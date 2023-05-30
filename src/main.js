@@ -208,13 +208,13 @@ const elements = [
   },
   {
     selector: ".service2-img",
-    options: { duration: 2, visibility: 0, scale: 0 },
+    options: { duration: 1, visibility: 0, delay: 0.5, scale: 0 },
     trigger: ".service2-img",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".service3-img",
-    options: { duration: 2, visibility: 0, scale: 0 },
+    options: { duration: 0.75, visibility: 0, delay: 1, scale: 0 },
     trigger: ".service3-img",
     toggleActions: "restart none restart none ",
   },
