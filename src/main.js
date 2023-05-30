@@ -183,19 +183,19 @@ const elements = [
 
   {
     selector: ".service1-text",
-    options: { duration: 1.5, visibility: 0, scale: 0 },
+    options: { duration: 1, visibility: 0, scale: 0 },
     trigger: ".service1-text",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".service2-text",
-    options: { duration: 1, visibility: 0, scale: 0, delay: 0.5 },
+    options: { duration: 1.5, visibility: 0, scale: 0 },
     trigger: ".service2-text",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".service3-text",
-    options: { duration: 1.5, visibility: 0, scale: 0, delay: 1 },
+    options: { duration: 2, visibility: 0, scale: 0 },
     trigger: ".service3-text",
     toggleActions: "restart none restart none ",
   },
@@ -225,7 +225,7 @@ const elements = [
       duration: 1,
       opacity: 0,
       scale: -2,
-      delay: .5,
+      delay: 0.5,
       stagger: true,
     },
     trigger: ".nav-item",
