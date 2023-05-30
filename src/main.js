@@ -31,40 +31,7 @@ chat.addEventListener("mouseout", () => {
 });
 
 // ANIMATIONS
-gsap.from(".logo", { duration: 4, x: -1000, ease: "bounce" });
-
-// gsap.from(".home-text, .logo-text", {
-//   duration: 1,
-//   opacity: 0,
-//   scale: 0,
-//   stagger: 0.25,
-//   ease: "back",
-//   scrollTrigger: {
-//     trigger: ".home-text",
-//     toggleActions: "restart none restart none ",
-//   },
-// });
-
-// gsap.from(".why-h1", {
-//   duration: 1.5,
-//   opacity: 0,
-//   x: -1000,
-//   ease: "slow",
-//   scrollTrigger: {
-//     trigger: ".why-h1",
-//     toggleActions: "restart none restart none ",
-//   },
-// });
-// gsap.from(".why-text", {
-//   duration: 1,
-//   visibility: 0,
-//   x: 1000,
-//   ease: "slow",
-//   scrollTrigger: {
-//     trigger: ".why-text",
-//     toggleActions: "restart none restart none ",
-//   },
-// });
+gsap.from(".logo", { duration: 4, x: -100, opacity: 0, ease: "bounce" });
 
 function animateElements(elements) {
   elements.forEach((element) => {
@@ -94,12 +61,12 @@ const elements = [
   },
   {
     selector: ".why-h1",
-    options: { duration: 1.5, opacity: 0, x: -1000, ease: "slow" },
+    options: { duration: 1.5, opacity: 0, scale: 0, ease: "slow" },
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".why-text",
-    options: { duration: 1, visibility: 0, x: 1000, ease: "slow" },
+    options: { duration: 1.5, scale: 0, delay: 1, ease: "slow" },
     toggleActions: "restart none restart none ",
   },
   {
@@ -126,19 +93,19 @@ const elements = [
   {
     selector: ".value1-h2",
     options: { visibility: 0, scale: 0, delay: 0.25 },
-    trigger: ".value1-img",
+    trigger: ".value1-h2",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".value1-text",
     options: { duration: 2, visibility: 0, scale: 0, delay: 0.65 },
-    trigger: ".value1-h2",
+    trigger: ".value1-text",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".value2-h2",
     options: { duration: 2, visibility: 0, scale: 0, delay: 0.5 },
-    trigger: ".value2-img",
+    trigger: ".value2-h2",
     toggleActions: "restart none restart none ",
   },
   {
@@ -149,7 +116,7 @@ const elements = [
   {
     selector: ".value2-text",
     options: { duration: 2, visibility: 0, scale: 0, delay: 0.65 },
-    trigger: ".value2-h2",
+    trigger: ".value2-text",
     toggleActions: "restart none restart none ",
   },
   {
@@ -160,19 +127,19 @@ const elements = [
   {
     selector: ".value3-h2",
     options: { duration: 2, visibility: 0, scale: 0, delay: 0.5 },
-    trigger: ".value3-img",
+    trigger: ".value3-h2",
     toggleActions: "restart none restart none ",
   },
 
   {
     selector: ".value3-text",
     options: { duration: 2, visibility: 0, scale: 0, delay: 1 },
-    trigger: ".value3-h2",
+    trigger: ".value3-text",
     toggleActions: "restart none restart none ",
   },
   {
     selector: ".service-h1",
-    options: { duration: 1.5, visibility: 0, scale: 0, x: -1000, ease: "slow" },
+    options: { duration: 1.5, visibility: 0, scale: 0, ease: "slow" },
     toggleActions: "restart none restart none ",
   },
   {
@@ -189,80 +156,69 @@ const elements = [
     selector: ".contact-l",
     options: {
       duration: 1,
-      x: -200,
       opacity: 0,
       stagger: 1,
       ease: "back",
-      scale: -2,
+      scale: 0,
     },
   },
   {
     selector: ".contact-r",
     options: {
       duration: 2,
-      x: 200,
       opacity: 0,
       stagger: 1,
-      scale: -2,
+      scale: -1,
       ease: "back",
     },
   },
   {
     selector: ".contact-us, .quote-h1",
-    options: { duration: 2, delay: 1, scale: 0, ease: "back" },
+    options: { duration: 1, delay: 1, scale: 0, ease: "back" },
   },
   {
     selector: ".calc",
-    options: { duration: 2, delay: 1, x: 200, ease: "back" },
+    options: { duration: 1, delay: 1, scale: 0, ease: "back" },
+  },
+
+  {
+    selector: ".service1-text",
+    options: { duration: 1.5, visibility: 0, scale: 0 },
+    trigger: ".service1-text",
+    toggleActions: "restart none restart none ",
+  },
+  {
+    selector: ".service2-text",
+    options: { duration: 1, visibility: 0, scale: 0, delay: 0.5 },
+    trigger: ".service2-text",
+    toggleActions: "restart none restart none ",
+  },
+  {
+    selector: ".service3-text",
+    options: { duration: 1.5, visibility: 0, scale: 0, delay: 1 },
+    trigger: ".service3-text",
+    toggleActions: "restart none restart none ",
+  },
+
+  {
+    selector: ".service1-img",
+    options: { duration: 2, visibility: 0, scale: 0 },
+    trigger: ".service1-img",
+    toggleActions: "restart none restart none ",
+  },
+  {
+    selector: ".service2-img",
+    options: { duration: 2, visibility: 0, scale: 0 },
+    trigger: ".service2-img",
+    toggleActions: "restart none restart none ",
+  },
+  {
+    selector: ".service3-img",
+    options: { duration: 2, visibility: 0, scale: 0 },
+    trigger: ".service3-img",
+    toggleActions: "restart none restart none ",
   },
 ];
 animateElements(elements);
 
-// function animateElementsTo(elementsTo) {
-//   elementsTo.forEach((element) => {
-//     const {
-//       selector,
-//       options,
-//       trigger,
-//       toggleActions,
-//       start,
-//       end,
-//       scrub,
-//       pin,
-//       startColor,
-//       endColor,
-//     } = element;
-//     gsap.to(selector, {
-//       ...options,
-//       scrollTrigger: {
-//         trigger: trigger || selector,
-//         toggleActions: toggleActions || "restart none none none",
-//         start: start,
-//         end: end,
-//         scrub: scrub,
-//         pin: pin,
-//       },
-//       markers: {
-//         startColor: startColor,
-//         endColor: endColor,
-//       },
-//     });
-//   });
-// }
-
-// const elementsTo = [
-//   {
-//     selector: ".old-truck",
-//     options: { duration: 8, x: -1000 },
-//     trigger: ".old-truck",
-//     start: "top 90%",
-//     end: "top 30%",
-//     scrub: 4,
-//     pin: true,
-//     startColor: "red",
-//     endColor: "blue",
-//   },
-// ];
-
-// animateElementsTo(elementsTo);
 // ANIMATIONS
