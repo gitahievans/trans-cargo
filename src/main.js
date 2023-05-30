@@ -226,7 +226,7 @@ const elements = [
       opacity: 0,
       scale: -2,
       delay: 0.5,
-      stagger: true,
+      stagger: 1,
     },
     trigger: ".nav-item",
   },
